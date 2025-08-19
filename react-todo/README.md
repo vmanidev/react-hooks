@@ -1,3 +1,11 @@
+# Todo App: Demonstrating Props and useState
+
+This Todo app demonstrates the usage of **props** and **useState** in React.  
+It shows how state and its updater function can be passed down to child components as props.  
+Child components do not mutate the state directly; instead, they use the provided updater function to lift state changes back up to the parent.  
+
+The app includes core functionalities such as **adding** and **deleting** todos.
+
 # Install and Configuration
 
 # React + Vite

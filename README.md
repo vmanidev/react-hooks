@@ -15,4 +15,4 @@ React automatically re-renders a component whenever its props or state change.
 
 ---
 
-🔗 Repository: [react-concepts](https://github.com/vmanidev/react-concepts/tree/main/react-todo)
+🔗 Repository: [react-concepts / props & useState()](https://github.com/vmanidev/react-concepts/tree/main/react-todo)
