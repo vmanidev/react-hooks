@@ -5,14 +5,15 @@ body {
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
+  width: fit-content;
+  padding: 5px;
 }
 
 #add-todo-container {
   display: flex;
-  justify-content: center;
   gap: 1em;
-  margin-top: 1em;
+  margin: 2em;
 }
 
 #add-todo-container input {
@@ -30,4 +31,18 @@ button {
   border-radius: 5px;
   color: white;
   padding: 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: fit-content;
+}
+
+li {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
 }
