@@ -12,11 +12,23 @@ button {
 
 .delete-btn {
   background: #ed5075;
+}
+
+.edit-btn {
+  background: #2b69b6;
+}
+
+.button {
   color: white;
   outline: none;
   border: none;
   border-radius: 5px;
   height: 2em;
+}
+
+.btn-container {
+  display: flex;
+  gap: 1em;
 }
 
 #add-todo-container {
@@ -52,6 +64,7 @@ ul {
 
 li {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 1em;
+  align-items: center;
 }
