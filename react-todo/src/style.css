@@ -10,6 +10,15 @@ button {
   padding: 5px;
 }
 
+.delete-btn {
+  background: #ed5075;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  height: 2em;
+}
+
 #add-todo-container {
   display: flex;
   gap: 1em;
