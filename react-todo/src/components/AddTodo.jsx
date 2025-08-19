@@ -12,7 +12,13 @@ export default function AddTodo({ setTodos }) {
 
   return (
     <div id="add-todo-container">
-      <input ref={inputRef} type="text" id="add-todo-input" name="addTodo" />
+      <input
+        ref={inputRef}
+        maxLength="100"
+        type="text"
+        id="add-todo-input"
+        name="addTodo"
+      />
       <button onClick={addTodo}>Add Todo</button>
     </div>
   );
