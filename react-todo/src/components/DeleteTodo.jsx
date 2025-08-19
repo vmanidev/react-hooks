@@ -5,7 +5,7 @@ export default function DeleteTodo({ currentTodoId, setTodos }) {
     setTodos((prev) => prev.filter(({ id }) => id !== currentTodoId));
 
   return (
-    <button className="delete-btn" onClick={deleteTodo}>
+    <button className="button delete-btn" onClick={deleteTodo}>
       Delete
     </button>
   );
