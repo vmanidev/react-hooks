@@ -1,3 +1,11 @@
+# React Concepts
+
+This repository contains implementations of various core and advanced React concepts.
+
+---
+
+# Install and Configuration
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
