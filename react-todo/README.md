@@ -6,6 +6,9 @@ Child components do not mutate the state directly; instead, they use the provide
 
 The app includes core functionalities such as **adding** and **deleting** todos.
 
+# Screenshot
+<img width="1440" height="751" alt="todo" src="https://github.com/user-attachments/assets/8491e821-28aa-4323-b5c5-b0cd32dd8a9a" />
+
 # Install and Configuration
 
 # React + Vite
