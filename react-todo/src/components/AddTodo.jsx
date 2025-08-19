@@ -11,7 +11,7 @@ export default function AddTodo({ setTodos }) {
   };
 
   return (
-    <div>
+    <div id="add-todo-container">
       <input ref={inputRef} type="text" id="add-todo-input" name="addTodo" />
       <button onClick={addTodo}>Add Todo</button>
     </div>
