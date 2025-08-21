@@ -4,6 +4,10 @@ This Countdown program demonstrates the usage of **useEffect** in React.
 It shows how useEffect is used to run a side effect, such as a timer (setInterval).
 When the countdown reaches zero, useEffect performs cleanup with clearInterval and displays a message indicating that it has finished running.
 
+# Screen Recordings
+
+https://github.com/user-attachments/assets/b65d5065-e6c4-41dc-8b5d-ad0eec9c54fb
+
 # Install and Configuration
 
 # React + Vite
