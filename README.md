@@ -13,7 +13,7 @@ State is a special React variable that holds data which can change over time.
 
 React automatically re-renders a component whenever its props or state change.
 
-🔗 Repository: [react-concepts / props & useState()](https://github.com/vmanidev/react-concepts/tree/main/react-todo)
+🔗 Repository: [react-concepts / props & useState](https://github.com/vmanidev/react-concepts/tree/main/react-todo)
 
 ---
 
@@ -21,6 +21,6 @@ React automatically re-renders a component whenever its props or state change.
 
 **useEffect** is a React hook used to run side effects in functional components. Side effects are actions that happen outside the normal rendering process, such as making API calls, using timers (setInterval, setTimeout), or subscribing to events.
 
-🔗 Repository: [react-concepts / props & useState()](https://github.com/vmanidev/react-concepts/tree/main/react-countdown)
+🔗 Repository: [react-concepts / useEffect](https://github.com/vmanidev/react-concepts/tree/main/react-countdown)
 
 ---
