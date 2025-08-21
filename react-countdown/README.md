@@ -1,3 +1,11 @@
+# Countdown Program: Demonstrating useEffect
+
+This Countdown program demonstrates the usage of **useEffect** in React.
+It shows how useEffect is used to run a side effect, such as a timer (setInterval).
+When the countdown reaches zero, useEffect performs cleanup with clearInterval and displays a message indicating that it has finished running.
+
+# Install and Configuration
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
