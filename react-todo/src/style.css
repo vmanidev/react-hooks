@@ -68,3 +68,7 @@ li {
   gap: 1em;
   align-items: center;
 }
+
+.isDone {
+  text-decoration: line-through;
+}

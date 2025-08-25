@@ -6,7 +6,7 @@ export default function AddTodo({ setTodos }) {
   const addTodo = () => {
     if (!inputRef.current.value) return;
     const todo = inputRef.current.value;
-    setTodos((prev) => [...prev, { id: prev.length + 1, todo }]); // update todo list
+    setTodos((prev) => [...prev, { id: prev.length + 1, todo, isDone: false }]); // update todo list
     inputRef.current.value = ""; // reset input field
   };
 
