@@ -64,9 +64,10 @@ ul {
 
 li {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1em 1fr 1fr;
   gap: 1em;
   align-items: center;
+  justify-items: flex-start;
 }
 
 .isDone {
