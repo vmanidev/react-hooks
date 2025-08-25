@@ -4,8 +4,9 @@ export default function MarkTodoAsDone({ currentTodoId, setTodos }) {
   const markAsDone = (isChecked) => {
     setTodos((prev) =>
       prev.map((todo) => {
-        if (todo.id === currentTodoId && isChecked) todo.isDone = true;
-        else todo.isDone = false;
+        if (todo.id === currentTodoId) {
+          todo.isDone = isChecked ? true : false;
+        }
         return todo;
       })
     );
