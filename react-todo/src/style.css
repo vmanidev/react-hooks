@@ -88,8 +88,9 @@ input[type="checkbox"] {
 #edit-input {
   grid-column: span 3;
   width: 100%;
-  padding: 5px;
   border-radius: 5px;
   outline: none;
   border: 1px solid #2b69b7;
+  height: 100%;
+  padding: 0 0 0 10px;
 }
