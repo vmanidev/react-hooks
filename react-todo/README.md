@@ -10,8 +10,12 @@ The app includes core functionalities such as **adding** and **deleting** todos.
 
 [![Demo](https://img.shields.io/badge/Live%20Demo-React%20Todo-blue?style=for-the-badge&logo=vercel)](https://react-todo-lake-mu.vercel.app/)
 
-# Screenshot
-<img width="1440" height="751" alt="todo" src="https://github.com/user-attachments/assets/8491e821-28aa-4323-b5c5-b0cd32dd8a9a" />
+# Screen Recordings
+
+
+https://github.com/user-attachments/assets/4f907ab5-d8a1-4436-b1f9-af175f2803d5
+
+
 
 # Install and Configuration
 
