@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-export default function MarkTodoAsDone({ currentTodoId, setTodos }) {
+export default function MarkTodoAsDone({ isDone, currentTodoId, setTodos }) {
+  const [checked, setChecked] = useState(isDone);
+
+  useEffect(() => {
+    setChecked(isDone);
+  }, [isDone]);
+
   const markAsDone = (isChecked) => {
     setTodos((prev) =>
       prev.map((todo) => {
@@ -10,13 +16,15 @@ export default function MarkTodoAsDone({ currentTodoId, setTodos }) {
         return todo;
       })
     );
+    setChecked(isChecked);
   };
 
   return (
     <input
       type="checkbox"
       name="mark-as-done"
-      onClick={(e) => markAsDone(e.target.checked)}
+      checked={checked}
+      onChange={(e) => markAsDone(e.target.checked)}
     />
   );
 }

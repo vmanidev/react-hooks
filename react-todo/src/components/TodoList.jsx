@@ -19,7 +19,11 @@ export default function TodoList({ todos, setTodos }) {
           </>
         ) : (
           <>
-            <MarkTodoAsDone currentTodoId={id} setTodos={setTodos} />
+            <MarkTodoAsDone
+              isDone={isDone}
+              currentTodoId={id}
+              setTodos={setTodos}
+            />
             <span className={isDone ? "isDone" : undefined}>{todo} </span>
             <EditTodoBtn currentTodoId={id} setTodos={setTodos} />
             <DeleteTodo currentTodoId={id} setTodos={setTodos} />
