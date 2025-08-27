@@ -19,7 +19,7 @@ export default function EditTodo({
           edit = false;
           todo = inputRef.current.value;
         }
-        return { id, todo, edit, rest };
+        return { id, todo, edit, ...rest };
       })
     );
   };
