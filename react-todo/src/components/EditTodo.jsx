@@ -1,17 +1,34 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
-export default function EditTodo({ currentTodoId, setTodos }) {
-  const editDone = () =>
+export default function EditTodo({
+  currentTodoValue,
+  currentTodoId,
+  setTodos,
+}) {
+  const inputRef = useRef(currentTodoValue);
+
+  useEffect(() => {
+    inputRef.current.value = currentTodoValue;
+  }, [currentTodoValue]);
+
+  const editDone = () => {
+    if (!inputRef.current.value) return;
     setTodos((prev) =>
-      prev.map((todo) => {
-        if (todo.id === currentTodoId) todo.edit = false;
-        return todo;
+      prev.map(({ id, todo, edit, ...rest }) => {
+        if (id === currentTodoId) {
+          edit = false;
+          todo = inputRef.current.value;
+        }
+        return { id, todo, edit, rest };
       })
     );
+  };
   return (
     <>
-      <input id="edit-input" type="text" name="editInput" />
-      <button className="button done-btn" onClick={editDone}>Done</button>
+      <input id="edit-input" type="text" name="editInput" ref={inputRef} />
+      <button className="button done-btn" onClick={editDone}>
+        Done
+      </button>
     </>
   );
 }

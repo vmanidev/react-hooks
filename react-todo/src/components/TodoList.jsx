@@ -11,7 +11,11 @@ export default function TodoList({ todos, setTodos }) {
         <span>{index + 1}.</span>
         {edit ? (
           <>
-            <EditTodo currentTodoId={id} setTodos={setTodos} />
+            <EditTodo
+              currentTodoValue={todo}
+              currentTodoId={id}
+              setTodos={setTodos}
+            />
           </>
         ) : (
           <>
