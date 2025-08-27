@@ -1,6 +1,6 @@
 import React from "react";
 import DeleteTodo from "./DeleteTodo";
-import MarkTodoAsDone from "./markAsDone";
+import MarkTodoAsDone from "./MarkTodoAsDone";
 import EditTodoBtn from "./EditTodoBtn";
 import EditTodo from "./EditTodo";
 
