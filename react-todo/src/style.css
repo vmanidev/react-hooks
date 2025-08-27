@@ -28,8 +28,8 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 5em;
-  height: 2em;
+  width: 100%;
+  height: 3em;
   padding: 5px;
 }
 
@@ -40,15 +40,14 @@ body {
 
 #add-todo-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 5em;
+  grid-template-columns: 1fr 6em;
   gap: 1em;
 }
 
 #add-todo-container input {
-  grid-column: span 3;
   padding: 10px;
   font-weight: bold;
-  border: 2px solid gray;
+  border: 2px solid #2b69b7;
   border-radius: 5px;
   outline: none;
 }
@@ -59,7 +58,7 @@ body {
   border-radius: 5px;
   color: white;
   padding: 10px;
-  width: fit-content;
+  width: 100%;
   height: 100%;
 }
 
@@ -72,7 +71,7 @@ ul {
 
 li {
   display: grid;
-  grid-template-columns: 1em 1em 1fr 4em 4em;
+  grid-template-columns: 1em 1em 1fr 5em 5em;
   gap: 1em;
   align-items: center;
   justify-items: flex-start;
@@ -92,5 +91,5 @@ input[type="checkbox"] {
   padding: 5px;
   border-radius: 5px;
   outline: none;
-  border: 1px solid gray;
+  border: 1px solid #2b69b7;
 }
