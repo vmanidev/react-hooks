@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: monospace;
   font-size: 1em;
 }
 
@@ -93,4 +93,10 @@ input[type="checkbox"] {
   border: 1px solid #2b69b7;
   height: 100%;
   padding: 0 0 0 10px;
+}
+
+.welcome-message {
+  margin: 50px auto auto auto;
+  width: fit-content;
+  line-height: 2em;
 }
