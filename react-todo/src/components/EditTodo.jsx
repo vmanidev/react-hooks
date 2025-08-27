@@ -25,7 +25,13 @@ export default function EditTodo({
   };
   return (
     <>
-      <input id="edit-input" type="text" name="editInput" ref={inputRef} />
+      <input
+        id="edit-input"
+        type="text"
+        name="editInput"
+        maxLength="100"
+        ref={inputRef}
+      />
       <button className="button done-btn" onClick={editDone}>
         Done
       </button>
