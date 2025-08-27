@@ -13,6 +13,10 @@ export default function AddTodo({ setTodos }) {
     inputRef.current.value = ""; // reset input field
   };
 
+  const handleKeyDown = (code) => {
+    if (code === "Enter") addTodo();
+  };
+
   return (
     <div id="add-todo-container">
       <input
@@ -21,8 +25,11 @@ export default function AddTodo({ setTodos }) {
         type="text"
         id="add-todo-input"
         name="addTodo"
+        onKeyDown={(e) => handleKeyDown(e.code)}
       />
-      <button className="button" onClick={addTodo}>Add Todo</button>
+      <button className="button" onClick={addTodo}>
+        Add Todo
+      </button>
     </div>
   );
 }
