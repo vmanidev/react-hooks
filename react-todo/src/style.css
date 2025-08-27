@@ -4,12 +4,6 @@ body {
   font-size: 1em;
 }
 
-button {
-  cursor: pointer;
-  width: fit-content;
-  padding: 5px;
-}
-
 .delete-btn {
   background: #ed5075;
 }
@@ -23,7 +17,10 @@ button {
   outline: none;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+  width: 5em;
   height: 2em;
+  padding: 5px;
 }
 
 .btn-container {
@@ -52,6 +49,8 @@ button {
   border-radius: 5px;
   color: white;
   padding: 10px;
+  width: fit-content;
+  height: 3em;
 }
 
 ul {
@@ -64,7 +63,7 @@ ul {
 
 li {
   display: grid;
-  grid-template-columns: 1em 1fr 1fr;
+  grid-template-columns: 1em 1em 1fr 5em 1fr;
   gap: 1em;
   align-items: center;
   justify-items: flex-start;
@@ -76,4 +75,18 @@ li {
 
 input[type="checkbox"] {
   cursor: pointer;
+}
+
+#edit-input {
+  grid-column: span 3;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid gray;
+}
+
+.done-btn,
+.edit-btn {
+  background: #5a5aff;
 }
