@@ -4,7 +4,7 @@ This repository contains implementations of various **core** and **advanced** Re
 
 ---
 
-## Props & useState Hook
+## Props & useState
 
 **Props** are used to pass data from a parent component to a child component.  
 
@@ -22,10 +22,18 @@ React automatically re-renders a component whenever its props or state change.
 
 ---
 
-## useEffect Hook 
+## useEffect 
 
 **useEffect** is a React hook used to run side effects in functional components. Side effects are actions that happen outside the normal rendering process, such as making API calls, using timers (setInterval, setTimeout), or subscribing to events.
 
 🔗 Repository: [react-concepts / useEffect](https://github.com/vmanidev/react-concepts/tree/main/react-countdown)
+
+---
+
+## useContext 
+
+**useContext** is a React hook that allows functional components to access values from a context directly. It is used to manage and share global state across the component tree without prop drilling. Components can consume and update shared data like themes, authentication, or user preferences.
+
+🔗 Repository: [react-concepts / useContext](https://github.com/vmanidev/react-concepts/tree/main/react-theme-toggle)
 
 ---
