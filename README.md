@@ -1,6 +1,6 @@
 # React Hooks
 
-This repository contains implementations of various **core** and **advanced** React concepts.
+This repository provides implementations of both fundamental and advanced React hooks, demonstrating their usage in various scenarios and practical applications.
 
 ---
 
