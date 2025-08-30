@@ -1,3 +1,15 @@
+# Theme Toggle with React Context
+
+This project demonstrates how to manage a global theme state in React using the `Context API` and the `useContext` hook. The theme can be toggled through a button in a child component, showcasing how context provides a clean and efficient way to share and update state across the component tree without prop drilling.
+
+# Demo Screen Recordings 
+
+
+https://github.com/user-attachments/assets/12c1fc11-b016-4be3-9e0f-bc395ee482a4
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
