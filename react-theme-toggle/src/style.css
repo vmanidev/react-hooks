@@ -1,0 +1,39 @@
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+  --button-bg-color: rgb(2, 111, 207);
+  --button-text-color: #fff;
+}
+
+.dark-theme {
+  --background-color: rgb(60, 53, 53);
+  --text-color: #fff;
+  --button-bg-color: #fddddd;
+  --button-text-color: #000;
+}
+
+body {
+  margin: 0;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  color: var(--button-text-color);
+  background-color: var(--button-bg-color);
+  width: 100px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  user-select: none;
+  cursor: pointer;
+}
