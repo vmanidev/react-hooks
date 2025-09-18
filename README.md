@@ -37,3 +37,11 @@ React automatically re-renders a component whenever its props or state change.
 🔗 Repository: [react-concepts / useContext](https://github.com/vmanidev/react-concepts/tree/main/react-theme-toggle)
 
 ---
+
+## useRef
+
+**useRef** is a React hook that provides a mutable reference object. It’s often used to access DOM elements directly, persist values across renders, and manage uncontrolled components without re-rendering.
+
+🔗 Repository: [react-concepts / useRef](https://github.com/vmanidev/react-hooks/tree/main/uncontrolled-component)
+
+---
