@@ -13,11 +13,11 @@ State is a special React variable that holds data which can change over time.
 
 React automatically re-renders a component whenever its props or state change.
 
-🔗 Repository: [react-concepts / props & useState](https://github.com/vmanidev/react-concepts/tree/main/react-todo) 
+🔗 Repository: [react-concepts / props & useState](https://github.com/vmanidev/react-concepts/tree/main/useState) 
 
 ## 🚀 Demo
 
-[![Demo](https://img.shields.io/badge/Live%20Demo-React%20Todo-blue?style=for-the-badge&logo=vercel)](https://react-todo-lake-mu.vercel.app/)
+[![Todo Demo](https://img.shields.io/badge/Live%20Demo%20useState-Todo-blue?style=for-the-badge&logo=vercel)](https://react-todo-lake-mu.vercel.app/)
 
 
 ---
@@ -26,7 +26,7 @@ React automatically re-renders a component whenever its props or state change.
 
 **useEffect** is a React hook used to run side effects in functional components. Side effects are actions that happen outside the normal rendering process, such as making API calls, using timers (setInterval, setTimeout), or subscribing to events.
 
-🔗 Repository: [react-concepts / useEffect](https://github.com/vmanidev/react-concepts/tree/main/react-countdown)
+🔗 Repository: [react-concepts / useEffect](https://github.com/vmanidev/react-concepts/tree/main/useEffect)
 
 ---
 
@@ -34,7 +34,7 @@ React automatically re-renders a component whenever its props or state change.
 
 **useContext** is a React hook that allows functional components to access values from a context directly. It is used to manage and share global state across the component tree without prop drilling. Components can consume and update shared data like themes, authentication, or user preferences.
 
-🔗 Repository: [react-concepts / useContext](https://github.com/vmanidev/react-concepts/tree/main/react-theme-toggle)
+🔗 Repository: [react-concepts / useContext](https://github.com/vmanidev/react-concepts/tree/main/useContext)
 
 ---
 
@@ -42,6 +42,6 @@ React automatically re-renders a component whenever its props or state change.
 
 **useRef** is a React hook that provides a mutable reference object. It’s often used to access DOM elements directly, persist values across renders, and manage uncontrolled components without re-rendering.
 
-🔗 Repository: [react-concepts / useRef](https://github.com/vmanidev/react-hooks/tree/main/uncontrolled-component)
+🔗 Repository: [react-concepts / useRef](https://github.com/vmanidev/react-hooks/tree/main/useRef)
 
 ---
