@@ -4,7 +4,7 @@ This repository provides implementations of both fundamental and advanced React 
 
 ## 🚀 Demo
 
-https://react-hooks-theta-one.vercel.app/
+[🌐 Live Demo - All React Hooks](https://react-hooks-theta-one.vercel.app/) 
 
 ---
 
@@ -19,10 +19,7 @@ React automatically re-renders a component whenever its props or state change.
 
 🔗 Repository: [react-concepts / props & useState](https://github.com/vmanidev/react-concepts/tree/main/useState) 
 
-## 🚀 Demo
-
-[![Todo Demo](https://img.shields.io/badge/Live%20Demo%20useState-Todo-blue?style=for-the-badge&logo=vercel)](https://use-state-todo.vercel.app/)
-
+[🌐 Live Demo - useState Todo App](https://use-state-todo.vercel.app/) 
 
 ---
 
