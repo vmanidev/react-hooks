@@ -17,7 +17,7 @@ React automatically re-renders a component whenever its props or state change.
 
 ## 🚀 Demo
 
-[![Todo Demo](https://img.shields.io/badge/Live%20Demo%20useState-Todo-blue?style=for-the-badge&logo=vercel)](https://react-todo-lake-mu.vercel.app/)
+[![Todo Demo](https://img.shields.io/badge/Live%20Demo%20useState-Todo-blue?style=for-the-badge&logo=vercel)](https://use-state-todo.vercel.app/)
 
 
 ---
