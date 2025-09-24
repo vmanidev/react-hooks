@@ -8,7 +8,7 @@ The app includes core functionalities such as **adding** and **deleting** todos.
 
 ## 🚀 Demo
 
-[![Demo](https://img.shields.io/badge/Live%20Demo-React%20Todo-blue?style=for-the-badge&logo=vercel)](https://react-todo-lake-mu.vercel.app/)
+[![Demo](https://img.shields.io/badge/Live%20Demo-React%20Todo-blue?style=for-the-badge&logo=vercel)](https://use-state-todo.vercel.app/)
 
 # Screen Recordings
 
