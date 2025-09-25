@@ -1,48 +1,49 @@
 # React Hooks
 
-This repository provides implementations of both fundamental and advanced React hooks, demonstrating their usage in various scenarios and practical applications.
+This repository demonstrates implementations of both fundamental and advanced React hooks, showing their usage in various scenarios and practical applications.
 
-## 🚀 Demo
-
-[🌐 Live Demo - All React Hooks](https://react-hooks-theta-one.vercel.app/) 
+🌐 Demo: [All React Hooks Index Page](https://react-hooks-theta-one.vercel.app/)
 
 ---
 
-## Props & useState
+## useState
+**State Management in Functional Components**  
+useState is a React hook that allows you to add state to functional components. It returns a stateful value and a function to update it.
 
-**Props** are used to pass data from a parent component to a child component.  
-
-**useState** is a React hook that allows you to add state to a functional component.  
-State is a special React variable that holds data which can change over time.  
-
-React automatically re-renders a component whenever its props or state change.
-
-🔗 Repository: [react-concepts / props & useState](https://github.com/vmanidev/react-concepts/tree/main/useState) 
-
-[🌐 Live Demo - useState Todo App](https://use-state-todo.vercel.app/) 
+🔗 Repository: [react-hooks/useState](https://github.com/react-hooks/useState)  
+🌐 Demo: [Todo App](https://use-state-todo.vercel.app/)
 
 ---
 
-## useEffect 
+## useEffect
+**Handling Side Effects in Components**  
+useEffect is a React hook that performs side effects in functional components. It runs after every render by default but can be configured to run only when certain values change.
 
-**useEffect** is a React hook used to run side effects in functional components. Side effects are actions that happen outside the normal rendering process, such as making API calls, using timers (setInterval, setTimeout), or subscribing to events.
-
-🔗 Repository: [react-concepts / useEffect](https://github.com/vmanidev/react-concepts/tree/main/useEffect)
+🔗 Repository: [react-hooks/useEffect](https://github.com/react-hooks/useEffect)  
+🌐 Demo: [Countdown](https://use-effect-countdown.vercel.app/)
 
 ---
 
-## useContext 
+## useContext / Context API
+**Global State Management with Context**  
+useContext is a React hook that allows you to access the value of a context directly, without needing to wrap components in a Consumer. It's commonly used with the Context API for global state management.
 
-**useContext** is a React hook that allows functional components to access values from a context directly. It is used to manage and share global state across the component tree without prop drilling. Components can consume and update shared data like themes, authentication, or user preferences.
-
-🔗 Repository: [react-concepts / useContext](https://github.com/vmanidev/react-concepts/tree/main/useContext)
+🔗 Repository: [react-hooks/useContext](https://github.com/react-hooks/useContext)  
+🌐 Demo: [Theme Toggle](https://context-api-theme-toggle.vercel.app/)
 
 ---
 
 ## useRef
+**Accessing DOM Elements and Persisting Values**  
+useRef is a React hook that provides a mutable reference object. It’s often used to access DOM elements directly, persist values across renders, and manage uncontrolled components without re-rendering.
 
-**useRef** is a React hook that provides a mutable reference object. It’s often used to access DOM elements directly, persist values across renders, and manage uncontrolled components without re-rendering.
-
-🔗 Repository: [react-concepts / useRef](https://github.com/vmanidev/react-hooks/tree/main/useRef)
+🔗 Repository: [react-hooks/useRef](https://github.com/react-hooks/useRef)  
 
 ---
+
+## useReducer
+**Complex State Management with Reducers**  
+useReducer is a React hook used for managing complex state logic. It’s similar to useState but is preferable when state transitions depend on the previous state or when multiple state values are managed together. It takes a reducer function and an initial state, returning the current state and a dispatch function to trigger state updates.
+
+🔗 Repository: [react-hooks/useReducer](https://github.com/react-hooks/useReducer)  
+🌐 Demo: [Todo App](https://use-reducer-beta.vercel.app/)
