@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { useReducer, useState } from "react";
 import "./index.css";
 
 const todoReducer = (state, action) => {
@@ -31,6 +31,35 @@ const todoReducer = (state, action) => {
 
 export default function App() {
   const [state, dispatch] = useReducer(todoReducer, { todos: [] });
+  const [formData, setFormData] = useState({
+    title: "",
+    isDone: false,
+  });
 
-  return <div>App</div>;
+  const addTodo = (payload) => {
+    dispatch({ type: "add", payload });
+  };
+
+  const handleFormChange = ({ target }) => {
+    const { name, value } = target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const formSubmit = (event) => {
+    addTodo(formData);
+  };
+
+  return (
+    <div>
+      <div>
+        <input
+          id="todoTitle"
+          name="todoTitle"
+          type="text"
+          onChange={handleFormChange}
+        />
+        <button onClick={formSubmit}>Add Todo</button>
+      </div>
+    </div>
+  );
 }
