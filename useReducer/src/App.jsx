@@ -67,6 +67,16 @@ export default function App() {
           Add Todo
         </button>
       </div>
+      <ul className="space-y-2">
+        {state.todos.map((todo) => (
+          <li
+            key={todo.id}
+            className="p-3 rounded-lg border border-gray-200 shadow-sm flex justify-between items-center"
+          >
+            <span>{todo.title}</span>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
