@@ -1,16 +1,13 @@
-# React + Vite
+# useReducer 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Implemented a simple Todo app demonstrating React's useReducer hook:
 
-Currently, two official plugins are available:
+- Add, delete, and edit todos
+- State is managed via a centralized reducer
+- Input handling with local state
+- Responsive styling with TailwindCSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Screenshots 
+<img width="1440" height="655" alt="Screenshot 2025-09-26 at 1 25 59 AM" src="https://github.com/user-attachments/assets/bcae9c45-12b6-4f57-acd1-e6b8a3b0acf3" />
+<img width="1440" height="655" alt="Screenshot 2025-09-26 at 1 26 07 AM" src="https://github.com/user-attachments/assets/658d9929-89bc-4fed-8f38-d05ff50e9500" />
 
-## React Compiler
-
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
