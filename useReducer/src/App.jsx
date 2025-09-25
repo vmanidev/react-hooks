@@ -1,5 +1,6 @@
 import { useReducer, useState } from "react";
 import "./index.css";
+import Modal from "./ui-components/Modal";
 
 const todoReducer = (state, action) => {
   const { type, payload } = action;
@@ -35,6 +36,7 @@ export default function App() {
     title: "",
     isDone: false,
   });
+  const [closeModal, setCloseModal] = useState(false);
 
   const addTodo = (payload) => {
     dispatch({ type: "add", payload });
@@ -87,6 +89,7 @@ export default function App() {
           </li>
         ))}
       </ul>
+      {closeModal && <Modal onCloseModal={setCloseModal(true)}></Modal>}
     </div>
   );
 }
