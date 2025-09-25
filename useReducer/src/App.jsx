@@ -57,6 +57,7 @@ export default function App() {
   };
 
   const formSubmit = (type) => {
+    if (formData.title === "") return;
     if (type === "add") {
       addTodo(formData);
     } else {
