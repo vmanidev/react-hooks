@@ -1,3 +1,4 @@
+import { useReducer } from "react";
 import "./index.css";
 
 const todoReducer = (state, action) => {
@@ -29,5 +30,7 @@ const todoReducer = (state, action) => {
 };
 
 export default function App() {
+  const [state, dispatch] = useReducer(todoReducer, { todos: [] });
+
   return <div>App</div>;
 }
