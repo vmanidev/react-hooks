@@ -50,15 +50,22 @@ export default function App() {
   };
 
   return (
-    <div>
-      <div>
+    <div className="grid grid-rows-[50px,1fr] gap-6 p-6">
+      <div className="flex items-center gap-4">
         <input
-          id="todoTitle"
-          name="todoTitle"
+          id="title"
+          className="flex-1 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          name="title"
           type="text"
           onChange={handleFormChange}
         />
-        <button onClick={formSubmit}>Add Todo</button>
+        <button
+          className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 transition"
+          type="submit"
+          onClick={formSubmit}
+        >
+          Add Todo
+        </button>
       </div>
     </div>
   );
