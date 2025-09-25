@@ -40,6 +40,10 @@ export default function App() {
     dispatch({ type: "add", payload });
   };
 
+  const deleteTodo = (id) => {
+    dispatch({ type: "delete", payload: { id } });
+  };
+
   const handleFormChange = ({ target }) => {
     const { name, value } = target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -74,6 +78,12 @@ export default function App() {
             className="p-3 rounded-lg border border-gray-200 shadow-sm flex justify-between items-center"
           >
             <span>{todo.title}</span>
+            <button
+              className="bg-red-600 text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-1 transition"
+              onClick={(e) => deleteTodo(todo.id)}
+            >
+              Delete
+            </button>
           </li>
         ))}
       </ul>
