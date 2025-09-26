@@ -27,6 +27,17 @@ const todoReducer = (state, action) => {
         todos: state.todos.filter(({ id }) => id !== payload.id),
       };
     }
+    case "markAsDone": {
+      return {
+        ...state,
+        todos: state.todos.map((todo) => {
+          if (todo.id === payload.id) todo.isDone = payload.isDone;
+          return todo;
+        }),
+      };
+    }
+    default:
+      return state;
   }
 };
 
@@ -49,6 +60,10 @@ export default function App() {
 
   const editTodo = (payload) => {
     dispatch({ type: "edit", payload });
+  };
+
+  const markAsDone = ({ id, isDone }) => {
+    dispatch({ type: "markAsDone", payload: { id, isDone } });
   };
 
   const handleFormChange = ({ target }) => {
@@ -99,9 +114,23 @@ export default function App() {
         {state.todos.map((todo) => (
           <li
             key={todo.id}
-            className="p-3 rounded-lg border border-gray-200 shadow-sm grid grid-cols-[1fr_50px_50px] items-center gap-2"
+            className="p-3 rounded-lg border border-gray-200 shadow-sm grid grid-cols-[20px_1fr_50px_50px] items-center gap-2"
           >
-            <span>{todo.title}</span>
+            <input
+              type="checkbox"
+              id="isDone"
+              className="h-5 w-5 text-blue-600 rounded border-gray-300 focus:ring-2 focus:ring-blue-500"
+              name="isDone"
+              checked={todo.isDone}
+              onChange={({ target: { checked } }) =>
+                markAsDone({ id: todo.id, isDone: checked })
+              }
+            />
+            <span
+              className={todo.isDone ? "line-through text-gray-400" : undefined}
+            >
+              {todo.title}
+            </span>
             <button
               className="bg-blue-600 text-white py-2 rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 transition text-xs sm:text-sm md:text-sm"
               onClick={(e) => {

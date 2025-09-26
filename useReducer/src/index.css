@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
-button {
-    cursor: pointer;
+button,
+input[type="checkbox"] {
+  cursor: pointer;
 }
