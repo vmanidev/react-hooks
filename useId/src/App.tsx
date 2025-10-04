@@ -1,19 +1,23 @@
+import { useId } from "react";
+
 export default function App() {
+  const dynamicId = useId();
+
   return (
     <>
-      <p>
+      <p id={`${dynamicId}_paragraph`}>
         <strong>useId</strong>: a React hook that generates stable and unique
         dynamic IDs for inputs and other elements, primarily to link labels with
         inputs and improve accessibility.
       </p>
-      <form>
+      <form id={`${dynamicId}_form`}>
         <div>
-          <label htmlFor="">Username</label>
-          <input id="" name="username" />
+          <label htmlFor={`${dynamicId}_username`}>Username</label>
+          <input id={`${dynamicId}_username`} name="username" />
         </div>
         <div>
-          <label htmlFor="">Password</label>
-          <input id="" name="password" />
+          <label htmlFor={`${dynamicId}_password`}>Password</label>
+          <input id={`${dynamicId}_password`} name="password" />
         </div>
       </form>
     </>
