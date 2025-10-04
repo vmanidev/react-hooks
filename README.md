@@ -52,3 +52,12 @@ useReducer is a React hook used for managing complex state logic. It’s similar
 
 🔗 Repository: [react-hooks/useReducer](https://github.com/vmanidev/react-hooks/tree/main/useReducer)  
 🌐 Demo: [Todo App](https://use-reducer-beta.vercel.app/)
+
+---
+
+## useId
+
+**Generating Unique IDs for Accessibility and Elements**  
+useId is a React hook that generates unique, stable IDs useful for accessibility attributes like `aria-*`, form element IDs, and more. It ensures uniqueness even during server-side rendering and hydration.
+
+🔗 Repository: [react-hooks/useId](https://github.com/vmanidev/react-hooks/tree/main/useId)
