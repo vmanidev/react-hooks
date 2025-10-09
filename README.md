@@ -9,7 +9,8 @@ This repository demonstrates implementations of both fundamental and advanced Re
 ## useState
 
 **State Management in Functional Components**  
-useState is a React hook that allows you to add state to functional components. It returns a stateful value and a function to update it.
+
+`useState` is a React hook that allows you to add state to functional components. It returns a stateful value and a function to update it.
 
 🔗 Repository: [react-hooks/useState](https://github.com/vmanidev/react-hooks/tree/main/useState)  
 🌐 Demo: [Todo App](https://use-state-todo.vercel.app/)
@@ -19,7 +20,8 @@ useState is a React hook that allows you to add state to functional components. 
 ## useEffect
 
 **Handling Side Effects in Components**  
-useEffect is a React hook that performs side effects in functional components. It runs after every render by default but can be configured to run only when certain values change.
+
+`useEffect` is a React hook that performs side effects in functional components. It runs after every render by default but can be configured to run only when certain values change.
 
 🔗 Repository: [react-hooks/useEffect](https://github.com/vmanidev/react-hooks/tree/main/useEffect)  
 🌐 Demo: [Countdown](https://use-effect-countdown.vercel.app/)
@@ -29,7 +31,8 @@ useEffect is a React hook that performs side effects in functional components. I
 ## useContext / Context API
 
 **Global State Management with Context**  
-useContext is a React hook that allows you to access the value of a context directly, without needing to wrap components in a Consumer. It's commonly used with the Context API for global state management.
+
+`useContext` is a React hook that allows you to access the value of a context directly, without needing to wrap components in a Consumer. It's commonly used with the Context API for global state management.
 
 🔗 Repository: [react-hooks/useContext](https://github.com/vmanidev/react-hooks/tree/main/useContext)  
 🌐 Demo: [Theme Toggle](https://context-api-theme-toggle.vercel.app/)
@@ -39,7 +42,8 @@ useContext is a React hook that allows you to access the value of a context dire
 ## useRef
 
 **Accessing DOM Elements and Persisting Values**  
-useRef is a React hook that provides a mutable reference object. It’s often used to access DOM elements directly, persist values across renders, and manage uncontrolled components without re-rendering.
+
+`useRef` is a React hook that provides a mutable reference object. It’s often used to access DOM elements directly, persist values across renders, and manage uncontrolled components without re-rendering.
 
 🔗 Repository: [react-hooks/useRef](https://github.com/vmanidev/react-hooks/tree/main/useRef)
 
@@ -48,7 +52,8 @@ useRef is a React hook that provides a mutable reference object. It’s often us
 ## useReducer
 
 **Complex State Management with Reducers**  
-useReducer is a React hook used for managing complex state logic. It’s similar to useState but is preferable when state transitions depend on the previous state or when multiple state values are managed together. It takes a reducer function and an initial state, returning the current state and a dispatch function to trigger state updates.
+
+`useReducer` is a React hook used for managing complex state logic. It’s similar to useState but is preferable when state transitions depend on the previous state or when multiple state values are managed together. It takes a reducer function and an initial state, returning the current state and a dispatch function to trigger state updates.
 
 🔗 Repository: [react-hooks/useReducer](https://github.com/vmanidev/react-hooks/tree/main/useReducer)  
 🌐 Demo: [Todo App](https://use-reducer-beta.vercel.app/)
@@ -58,6 +63,19 @@ useReducer is a React hook used for managing complex state logic. It’s similar
 ## useId
 
 **Generating Unique IDs for Accessibility and Elements**  
-useId is a React hook that generates unique, stable IDs useful for accessibility attributes like `aria-*`, form element IDs, and more. It ensures uniqueness even during server-side rendering and hydration.
+
+`useId` is a React hook that generates unique, stable IDs useful for accessibility attributes like `aria-*`, form element IDs, and more. It ensures uniqueness even during server-side rendering and hydration.
 
 🔗 Repository: [react-hooks/useId](https://github.com/vmanidev/react-hooks/tree/main/useId)
+
+---
+
+## useImperativeHandle
+
+**Exposing Imperative Methods from Child Components**  
+
+`useImperativeHandle` is a React hook that allows a parent component to access specific methods or properties of a child component via a ref. It is useful for imperatively controlling child behavior, such as focusing inputs, clearing fields, or exposing getter/setter functions, while keeping the child’s internal implementation encapsulated.
+
+🔗 Repository: [react-hooks/useImperativeHandle](https://github.com/vmanidev/react-hooks/tree/main/useImperativeHandle)
+
+---
